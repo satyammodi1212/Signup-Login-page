@@ -1,0 +1,117 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for the signup form */
+  .signup-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Logo or header section */
+  .logo-image {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .logo-image h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Auth form container */
+  .auth-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+
+  /* Form title */
+  .auth-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  /* Input fields */
+  .auth-container input[type="text"],
+  .auth-container input[type="email"],
+  .auth-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Signup button */
+  .auth-button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Link to login page */
+  .auth-container p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .auth-container p a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .auth-container p a:hover {
+    text-decoration: underline;
+  }
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Disable button while loading */
+  .auth-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  @media(max-width: 480px){
+    .auth-container{
+        width: 250px;
+    }
+  }
+  @media(max-width: 350px){
+    .auth-container{
+        width: 200px;
+    }
+  }
